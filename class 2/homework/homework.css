@@ -1,0 +1,91 @@
+/* 이미지에 대한 스타일 */
+body {
+    background-color: black; /* 바탕 배경색을 검은색으로 지정 */
+    color: white; /* 텍스트 색상을 흰색으로 지정 */
+}
+img {
+    width: 250px; /* 이미지 너비를 250px로 지정 */
+    height: auto; /* 이미지 높이를 자동으로 조정하여 비율 유지 */
+    margin: 70px 35px 35px 20px; /* 위, 오른쪽, 아래, 왼쪽 여백 설정 */
+    padding: 10px; /* 내부 여백 설정 */
+}
+
+/* h1 요소에 대한 스타일 */
+#likelion {
+    font-size: 72px; /* 글자 크기를 36px로 설정 */
+    font-style: italic; /* 기울어진 글꼴로 설정 */
+    margin: 10px 35px 10px 40px;
+}
+
+#intro {
+    margin: 5px 35px 5px 40px;
+
+}
+#button-container {
+    display: flex; /* Flexbox 레이아웃 사용 */
+    margin: 20px;
+}
+.styled-button{
+    width: 100px; /* 버튼의 너비를 100px로 설정 */
+    height: 100px; /* 버튼의 높이를 100px로 설정 */
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 5px 5px 15px;
+    
+}
+
+.login-container {
+    width: 200px; /* 원하는 너비 값 */
+    height: 200px; /* 원하는 높이 값 */
+    background-color: none; /* 배경색 없음 */
+    padding: 20px; /* 내부 여백 설정 */
+    border-radius: 10px; /* 모서리를 둥글게 만들기 위한 값 */
+    text-align: center; /* 내부 요소 중앙 정렬 */
+    float: right; /* 오른쪽으로 부유시킴 */
+    margin: -420px 200px 20px 40px; /* 오른쪽 여백 설정 */
+}
+.login-container legend {
+    font-style: italic; 
+    text-align: center; /* Login 글씨만 중앙 정렬 */
+}
+.login-container span {
+    display: block; /* 인라인 요소를 블록 요소로 변경하여 줄 바꿈이 가능하게 함 */
+    margin-bottom: 5px; /* ID와 PW 사이의 간격 조절 */
+    border-radius: 100px;
+    
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%; /* 부모 요소 너비를 채우도록 함 */
+    height: 20%;
+    margin-bottom: 10px; /* 입력란 간격 조절 */
+    border-radius: 20px; /* 입력란 모서리를 둥글게 만들기 위한 값 */
+}
+.login-container button {
+    width: 70%;
+    height: 20%;
+    margin-top: 10;
+    border-radius: 100px;
+    background-color: orange;
+    text-decoration-color: aliceblue;
+
+}
+@media screen and (max-width: 600px) {
+    #intro,
+    #button-container {
+        display: none;
+    }
+
+    #likelion {
+        margin: 10px 35px; /* 로그인 컨테이너의 위쪽 여백 조절 */
+    }
+
+    .login-container {
+        width: 80%; /* 화면 너비의 80%로 설정 */
+        height: auto; /* 높이 자동 조정 */
+        float: none; /* 부유 해제 */
+        margin: 20px auto; /* 수평 중앙 정렬 */
+    }
+}
