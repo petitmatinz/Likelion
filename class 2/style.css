@@ -1,0 +1,104 @@
+:root {
+    --text-color: #f0f4f5;
+    --background-color: #263343;
+    --point-color: #ff7f50;
+  }
+
+  body {
+    color: var(--text-color);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 12px;
+  }
+  
+  .navbar_logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar_logo svg{
+    fill: var(--point-color);
+    margin-right: 5px;
+  }
+  
+  .navbar_menu {
+    display: flex;
+  }
+
+  .navbar_menu li {
+    padding: 5px 10px;
+  }
+  
+  .navbar_menu li:hover {
+    background-color: var(--point-color);
+    border-radius: 5px;
+  }
+  
+  .navbar_links {
+    display: flex;
+  }
+
+  .navbar_links svg{
+    fill: var(--text-color);
+    margin-left: 10px;
+  }
+ /*화면축소시 나타나는 햄버거바*/
+  .navbar_bars {
+    display: none;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .navbar_bars svg {
+    fill: var(--point-color);
+  }
+  /* 미디어 처리 */
+  @media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+      }
+
+    .navbar_menu { 
+        display: none;
+      }
+
+    .navbar_menu.active { 
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+      }
+
+    .navbar_menu.active li { 
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+     }
+
+    .navbar_links {
+        display: none;
+    }
+
+    .navbar_links.active {
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+
+    .navbar_bars {
+        display: block;
+        position: absolute;
+        right: 8px;
+    }
+  }

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>h1 태그입니다</h1>
+    <div>div 태그입니다</div>
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMTNfOTEg%2FMDAxNzEwMzA0NDA3NDA5.AxISpjcK-y03rcoFdb_-dAmg8QLWntbG16YeCUcXkQIg.UMYwJ9R7n_ifkuEHtowJZq_txKCh_O4JpJOOad87K2gg.JPEG%2F80cd4e97b7019316ffc477d50f477034.jpg&type=a340" alt="">
+    <h2>h2 태그입니다</h2>
+    
+</body>
+</html>
